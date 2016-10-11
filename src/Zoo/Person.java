@@ -15,11 +15,13 @@ public class Person {
 
     public String name;
     public String gender;
+    public String age;
 
-    public Person(String n, String g){
+    public Person(String n, String g, String a){
 
         name = n;
         gender = g;
+        age = a;
     }
 
     public static String getName(){
@@ -33,9 +35,14 @@ public class Person {
         String gender1 = scanner.nextLine();
         return gender1;
     }
+    public static String getAge(){
+        System.out.println("What is your age?");
+        String age1 = scanner.nextLine();
+        return age1;
+    }
 
     public static void buildAPerson(){
-        Person p1 = new Person (getName(), getGender());
+        Person p1 = new Person (getName(), getGender(), getAge());
 
         list.add(p1.displayInfo());
         System.out.println(p1.displayInfo());
@@ -43,8 +50,13 @@ public class Person {
 
     }
     public String displayInfo(){
-        return "Name: " + name + "\n" + "Gender: " + gender;
+        return "Name: " + name + "\n" + "Gender: " + gender + "\n" + "Age: " + age;
 
     }
+    public static void displayArray(){
+        System.out.println("People in the zoo: " + "\n");
+        for(String Items : list){
+            System.out.println(Items + "\n");
+    }
 
-}
+}}

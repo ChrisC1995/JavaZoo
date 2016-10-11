@@ -7,13 +7,27 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args){
         Scanner scanner = new Scanner (System.in);
-        System.out.println("What would you like to accomplish at our Zoo?" + "\n" + "Press 1 to add visitors records" + "\n" + "Press 2 to add Animals" + "\n" + "Press 3 for help" + "\n" + "Press 4 to exit");
+        while(true){
+        System.out.println("**********************" + "\n" + "What would you like to accomplish at our Zoo?" + "\n" + "Press 1 to add visitors records" + "\n" + "Press 2 to add Animals" + "\n" + "Press 3 to see all records entered" + "\n" + "Press 4 to exit" + "\n" + "**********************");
         int choice = scanner.nextInt();
-            switch(choice){
-                case 1:
-                    Person.buildAPerson();
-                    break;
-            }
 
+               switch(choice){
+                   case 1:
+                       Person.buildAPerson();
+                       break;
+                   case 2:
+                       Animal.buildAnAnimal();
+                       break;
+                   case 3:
+                       Person.displayArray();
+                       Animal.displayArray();
+                       break;
+
+               }
+
+        if( choice == 4){
+            break;
+        }
+        }
     }
 }
