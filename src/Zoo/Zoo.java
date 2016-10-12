@@ -4,7 +4,7 @@ import java.util.Scanner;
 /**
  * Created by christiancampbell on 10/11/16.
  */
-public class Main {
+public class Zoo {
     public static void main(String[] args){
         Scanner scanner = new Scanner (System.in);
         while(true){
