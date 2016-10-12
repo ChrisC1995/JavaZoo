@@ -28,6 +28,7 @@ public class Main {
                }
 
         if( choice == 5){
+            System.out.println("Thanks for coming to our zoo!");
             break;
         }
         }

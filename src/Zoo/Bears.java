@@ -49,7 +49,7 @@ public class Bears extends Animal {
 
 
     public String displayInfo(){
-        return "**************" + "\n" + "Name: " + name + "\n" + "Type: " + type + "\n" + "Species: " + species + "\n" + "Temperament: " + temperament + "\n" + "Weight: " + weight;
+        return "**************" + "\n" + "Name: " + name + "\n" + "Type: " + type + "\n" + "Species: " + species + "\n" + "Temperament: " + temperament + "\n" + "Weight: " + weight + "\n" + "Exhibit: " + Exhibit.BEAR.exhibit;
 
     }
 }

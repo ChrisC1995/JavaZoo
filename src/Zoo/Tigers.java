@@ -47,7 +47,7 @@ public class Tigers extends Animal {
 
 
     public String displayInfo(){
-        return "**************" + "\n" + "Name: " + name + "\n" + "Type: " + type + "\n" + "Species: " + species + "\n" + "Temperament: " + temperament + "\n" + "Color: " + color;
+        return "**************" + "\n" + "Name: " + name + "\n" + "Type: " + type + "\n" + "Species: " + species + "\n" + "Temperament: " + temperament + "\n" + "Color: " + color + "\n" + "Exhibit: " + Exhibit.TIGER.exhibit;
 
     }
 }

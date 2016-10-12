@@ -48,7 +48,7 @@ public class Lions extends Animal {
 
 
     public String displayInfo(){
-        return "**************" + "\n" + "Name: " + name + "\n" + "Type: " + type + "\n" + "Species: " + species + "\n" + "Temperament: " + temperament + "\n" + "Mane Length: " + Mane;
+        return "**************" + "\n" + "Name: " + name + "\n" + "Type: " + type + "\n" + "Species: " + species + "\n" + "Temperament: " + temperament + "\n" + "Mane Length: " + Mane + "\n" + "Exhibit: " + Exhibit.LION.exhibit;
 
     }
 }
