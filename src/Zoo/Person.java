@@ -41,22 +41,33 @@ public class Person {
         return age1;
     }
 
-    public static void buildAPerson(){
-        Person p1 = new Person (getName(), getGender(), getAge());
-
-        list.add(p1.displayInfo());
-        System.out.println(p1.displayInfo());
-
-
-    }
-    public String displayInfo(){
-        return "Name: " + name + "\n" + "Gender: " + gender + "\n" + "Age: " + age;
-
-    }
+//    public static void buildAPerson(){
+//        Person p1 = new Person (getName(), getGender(), getAge());
+//
+//        list.add(p1.displayInfo());
+//        System.out.println(p1.displayInfo());
+//
+//
+//    }
+//    public String displayInfo(){
+//        return "Name: " + name + "\n" + "Gender: " + gender + "\n" + "Age: " + age;
+//
+//    }
     public static void displayArray(){
         System.out.println("People in the zoo: " + "\n");
         for(String Items : list){
             System.out.println(Items + "\n");
-    }
-
-}}
+    }}
+    public static void pick(){
+        System.out.println("Are you going to record an employee or visitor? Press 1 for employee. Please 2 for visitor.");
+        int choice1 = scanner.nextInt();
+        switch(choice1){
+            case 1:
+                Employee.buildAPerson();
+                break;
+            case 2:
+                Visitor.buildAPerson();
+                break;
+        }
+}
+}
